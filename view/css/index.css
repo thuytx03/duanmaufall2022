@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    
+}
+.mb10{
+    margin-top: 10px;
+}
+header{
+    display: grid;
+    grid-template-columns: 120px 700px 70px 70px;
+    margin-top: 10px;
+    justify-content: center;
+}
+/* logo */
+.logo img{
+    width: 100px;
+   
+}
+/* form tìm kiếm */
+.timkiem{
+    margin-top: 15px;
+}
+.timkiem input{
+    width: 600px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.timkiem button{
+    width: 65px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+
+}
+.timkiem button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* login */
+.login img{
+    width: 40px;
+    margin-top: 13px;
+}
+.giohang img{
+    margin-top: 13px;
+    width: 40px;
+}
+
+/* banner */
+.banner img{
+    width: 100%;
+}
+/**Menu**/
+nav{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(226, 226, 226);
+    margin-bottom: 5px;
+}
+nav ul li{
+    display: inline-block;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 5px;
+    width: 190px;
+    height: 40px;
+    line-height: 35px;
+}
+nav ul li:hover {
+    background-color: beige;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+    padding: 0px 50px 0px 50px;
+}
+nav li a:hover{
+    font-weight: bold;
+}
+
+/*Top 10 sản phẩm yêu thích nhất*/
+article{
+    text-align: center;
+   margin-left: 50px;margin-top: 20px;
+    
+}
+.topyeuthich{
+    text-align: center;
+    margin-top: 70px;
+}
+.top10{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+.top10-list{
+    margin-top: 30px;    
+}
+.top10-list button{
+    width: 120px;
+    height: 35px;
+}
+
+.anh img{
+    width: 100%;
+}
+.top10-name{
+    margin-top: 10px; 
+}
+
+.top10-name a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px; 
+}
+.top10-name a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+.top10-list {
+    position: relative;
+    width: 100%;
+}
+.image {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .6s ease;
+    backface-visibility: hidden;
+    
+  }
+  
+.top10-cn {
+    transition: .6s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+   
+  }
+  
+.top10-list:hover .image {
+    opacity: 0.5;
+  }
+  
+.top10-list:hover .top10-cn {
+    opacity: 1;
+  }
+  
+.text {
+    width: 100px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+    margin-left: 8px;
+  }
+.text:hover{
+      color: black;
+      background-color: white;
+  }
+/*Sản phẩm mới ra mắt*/
+aside{
+ 
+    margin: 30px 0px 0px 50px;
+    text-align: center;
+   margin-bottom: 70px;
+
+}
+.product-new{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    text-align: center;
+}
+.product-list{
+    margin-top: 30px;  
+}
+.product-list button{
+    width: 120px;
+    height: 35px;
+}
+
+.anh img{
+    width: 100%;
+}
+.product-name{
+    margin-top: 10px;
+
+}
+.product-name a{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+.product-name a:hover{
+    text-decoration: underline;
+    color: red;
+    
+}
+
+.product-list {
+    position: relative;
+    width: 100%;
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100px;
+    height: auto;
+    transition: .6s ease;
+    backface-visibility: hidden;
+  }
+  
+.product-cn {
+    transition: .6s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+.product-list:hover .image {
+    opacity: 0.5;
+  }
+  
+.product-list:hover .product-cn {
+    opacity: 1;
+  }
+
+
+  /* Footer */
+footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr ;
+    text-align: justify;
+    background-color: rgb(226, 226, 226);
+    margin-top: 60px;
+
+}
+.f1{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.f2,.f3,.f4{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.f1 p{
+    padding-top: 5px;
+}
+.f2 ul li, .f3 ul li ,.f4 ul li{
+    display: block;
+    padding-top: 5px;
+     
+}
+.f2 li a, .f3 li a, .f4 li a{
+    text-decoration: none;
+    color: black;
+
+}
+.f2 li a:hover, .f3 li a:hover, .f4 li a:hover{
+    text-decoration: underline;
+    color: red;
+
+}
+.f3 h4{
+    padding-top: 5px;
+}
+
+
+/**TRANG ADDMIN**/
+.headeradmin {
+    background-color: #EEE;
+    border: 1px #CCC solid;
+    color: #666;
+    border-radius: 5px;
+    padding: 0px 20px;
+}
+
+.headeradmin h1 {
+    font-size: 2vw;
+}
+
+.frmtitle {
+    background-color: #EEE;
+    border: 1px #CCC solid;
+    color: #666;
+    border-radius: 5px;
+    padding: 0px 20px;
+}
+
+.frmcontent {
+    padding: 20px 0px;
+}
+
+.frmdsloai table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.frmdsloai table th {
+    width: 10%;
+    padding: 20px;
+    background-color: #CCC;
+}
+
+/* .frmdsloai table th:nth-child(2) {
+    width: 30%;
+    background-color: #CCC;
+}
+
+.frmdsloai table th:nth-child(3) {
+    width: 40%;
+    background-color: #CCC;
+}
+
+.frmdsloai table th:nth-child(4) {
+    width: 20%;
+    background-color: #CCC;
+} */
+
+.frmdsloai table td {
+    padding: 10px 20px;
+    border: 1px #CCC solid;
+}
