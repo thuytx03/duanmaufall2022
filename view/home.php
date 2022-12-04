@@ -231,7 +231,7 @@
                       <input type="hidden" name="id" value="' . $id . '">
                       <input type="hidden" name="name" value="' . $name . '">
                       <input type="hidden" name="img" value="' . $img . '">
-                      <input type="hid den" name="price" value="' . $price . '">
+                      <input type="hidden" name="price" value="' . $price . '">
                       <input type="submit" class="text" name="addtocart" value="Thêm giỏ hàng">
                     </form>
                    
